@@ -1,0 +1,32 @@
+body{
+    background-color: orange;
+}
+#container{
+    margin: 100px auto;
+    align-items: center;
+    max-width: 85%;
+    aspect-ratio: 1;
+    
+
+}
+
+.rowBox{
+    
+    display: flex;
+    flex-direction: row;
+}
+.coloumnBox{
+    aspect-ratio: 1;
+    width: 60px;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+   
+}
+.playing{
+    background-color: black;
+}
+.coloumnBox:hover{
+    background-color: red;
+}
