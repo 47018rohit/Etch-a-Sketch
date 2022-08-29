@@ -6,9 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-a-Sketch</title>
     <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer ></script>
 </head>
 <body>
-    <div id="container"></div>
-    <script src="app.js" ></script>
+    <h1>Sketchpad</h1>
+    <div class="mode">Mode: Coloring</div>
+    <div class="displayBox">
+        <div class="buttons">
+            <div class="gridSize">
+                <input type="text" id="textInput" placeholder="Grid Size = a*a" onchange="changeSize(this.value)"/ >
+                <button>Set Size</button>
+            </div>
+            <div class="error"></div>
+            <button id="reset" onclick="reset()">Reset</button>
+        </div>
+        <div class="container"></div>
+
+        <div class="colours">
+            <div class="setColor">Choose Color</div>
+            <input type="color" id="changeColor" placeholder="set color" />
+            <input type="text" id="hexValue" placeholder="Hex"/>
+            <button id="eraser">Eraser</button>
+        </div>
+    </div>    
 </body>
 </html>

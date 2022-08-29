@@ -1,32 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+*{
+    border-style: none;
+}
 body{
     background-color: orange;
-}
-#container{
-    margin: 100px auto;
-    align-items: center;
-    max-width: 85%;
-    aspect-ratio: 1;
-    
-
-}
-
-.rowBox{
-    
-    display: flex;
-    flex-direction: row;
-}
-.coloumnBox{
-    aspect-ratio: 1;
-    width: 60px;
-    background-color: blue;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-   
+    align-items: center;
+    justify-content: center;
+    font-family: 'Silkscreen', cursive;
+    padding-bottom: 100px;
+    
+    
 }
-.playing{
-    background-color: black;
+.container{
+    aspect-ratio: 1;
+    width: 700px;
+    display: grid;
+
 }
-.coloumnBox:hover{
-    background-color: red;
+h1{
+    font-size: 72px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.displayBox{
+    display: flex;
+    gap: 100px;
+    justify-content: space-around;
+}
+#textInput,#hexValue{
+    font-family: 'Silkscreen', cursive;
+    width: 130px;height: 30px;
+    font-size: large;
+    background-color:#4AE8A3 ;
+    
+    border-radius: .3rem;
+}
+button{
+    width: 80px;height: 35px;
+    background-color: #B01CE8;
+    font-family: 'Silkscreen', cursive;
+    border-radius: 0.5em;
+    
+}
+button:hover{
+    background-color: #cb74eb;
+    box-shadow: 0px 0px 2px 1px #cb74eb;
+}
+#changeColor{
+    height: 100px;
+    width: 135px;
+    background-color: #44D495;
+    
+}
+#reset{
+    width : 220px;
+    margin-top: 50px;
+}
+#changeColor{
+    border-inline-start-style: none;
+}
+.colours{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.error{
+    max-width: 220px;
+    text-align: center;
+}
+#eraser{
+    width: 135px;
 }
